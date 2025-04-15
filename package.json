@@ -2,7 +2,7 @@
   "name": "html2pdf-lc.js",
   "version": "1.0.0",
   "description": "Fork of html2pdf.js with updated dependencies.",
-  "main": "dist/html2pdf.js",
+  "main": "dist/html2pdf-lc.js",
   "files": [
     "/src",
     "/dist"

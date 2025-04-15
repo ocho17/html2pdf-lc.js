@@ -18,7 +18,7 @@ module.exports = env => {
     output: {
       filename,
       library: {
-        name: 'html2pdf',
+        name: 'html2pdf-lc',
         type: 'umd',
         export: 'default',
         umdNamedDefine: true,
@@ -37,11 +37,11 @@ module.exports = env => {
   });
 
   const builds = {
-    umd: makeUMDConfig('html2pdf.js'),
-    umdBundle: makeUMDConfig('html2pdf.bundle.js', { bundle: true }),
+    umd: makeUMDConfig('html2pdf-lc.js'),
+    umdBundle: makeUMDConfig('html2pdf-lc.bundle.js', { bundle: true }),
     ...(isDev ? {} : {
-      umdMin: makeUMDConfig('html2pdf.min.js', { min: true }),
-      umdBundleMin: makeUMDConfig('html2pdf.bundle.min.js', { bundle: true, min: true }),
+      umdMin: makeUMDConfig('html2pdf-lc.min.js', { min: true }),
+      umdBundleMin: makeUMDConfig('html2pdf-lc.bundle.min.js', { bundle: true, min: true }),
     }),
   };
 
